@@ -6,7 +6,7 @@ const joinNames = namesObj => {
        newArray.splice(newArray.length-2);
        newArray.push(newString);
        return newArray.join(', ');
-    } else {return namesObj.join(', ')}
+    } else {const newArray = namesObj.map(x=> x.name); return newArray.join(', ');}
 };
 
 
